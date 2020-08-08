@@ -97,5 +97,5 @@ def transform_df(spark=get_spark()):
 
 
 if __name__ == '__main__':
-    # convert_to_parquet()
+    convert_to_parquet()
     transform_df()
