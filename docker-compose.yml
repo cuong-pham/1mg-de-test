@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+    trip-data:
+        image: jupyter/pyspark-notebook
+        build:
+            context: .
+        volumes:
+            - .:/app
+        working_dir: /app
+        command: python /app/trip_data.py
